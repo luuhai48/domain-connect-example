@@ -1,0 +1,13 @@
+{
+    "name": "hailuu/domainconnect",
+    "description": "Example on how to work with domainconnect on PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Hailuu\\Domainconnect\\": "src/"
+        }
+    },
+    "require": {
+        "gaalferov/php-ext-domain-connect": "^2.0"
+    }
+}

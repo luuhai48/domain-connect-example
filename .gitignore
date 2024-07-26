@@ -1,0 +1,4 @@
+*.cache
+*.pem
+.DS_Store
+vendor/
