@@ -12,7 +12,7 @@ $ip_address_of_pixely_server = '132.148.25.185';
 try {
   $templateService = new TemplateService();
   $privateKey = file_get_contents(__DIR__ . '/private_key.pem');
-  $keyId = DM_HOST;
+  $keyId = DM_KEY;
   
   $applyUrl = $templateService->getTemplateSyncUrl(
       $domain_you_want_to_connect, // domain name

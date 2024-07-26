@@ -28,8 +28,8 @@ function generateDNSRecordsFromPublicKey(string $publicKey) {
     $chunkSize = 200;
     $chunks = str_split($publicKey, $chunkSize);
     foreach ($chunks as $index => $chunk) {
-        echo "Record Name: " . DM_HOST . "." . DM_DOMAIN . PHP_EOL;
-        echo "Record Content: p=" . ($index + 1) . ",a=RS256,d=: $chunk" . PHP_EOL . PHP_EOL;
+        echo "Record Name: " . DM_KEY . "." . DM_DOMAIN . PHP_EOL;
+        echo "Record Content: p=" . ($index + 1) . ",a=RS256,d=$chunk" . PHP_EOL . PHP_EOL;
     }
 }
 
